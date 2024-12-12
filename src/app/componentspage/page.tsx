@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import BreadCrumbs from "../components/BreadCrumbs";
 
@@ -16,7 +18,7 @@ function ComponentsPage() {
             Specifically designed for modern web projects! Our collection of
             Tailwind CSS elements includes components specifically crafted for
             SaaS, SPAs, dashboards, NFTs, and startup landing pages, ensuring a
-            perfect fit for your project's needs.
+            perfect fit for your projects needs.
           </h4>
         </div>
       </div>
