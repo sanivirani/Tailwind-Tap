@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable react/no-unescaped-entities */
+
 import React from "react";
+import Image from "next/image";
 
 function ContactUs() {
   return (
@@ -11,9 +10,9 @@ function ContactUs() {
           <div className="flex flex-col items-center justify-center gap-10">
             <h1 className="font-medium text-5xl text-[#000000]">Contact US</h1>
             <div className=" w-[1054px] h-[93px] text-center text-2xl font-light text-[#10180BCC] leading-[31px] -tracking-normal">
-              Share your feedback, questions, or just say hi - we're here to
+              Share your feedback, questions, or just say hi - we&apos;re here to
               listen and help. Our dedicated team is passionate about providing
-              exceptional support, so don't hesitate to reach out!
+              exceptional support, so don&apos;t hesitate to reach out!
             </div>
           </div>
         </div>
@@ -22,7 +21,7 @@ function ContactUs() {
         <div className="w-[1300px] h-[667px] rounded-[35px] border-[2px] border-[#3F6D2680] mx-[110px]">
           <div className="flex justify-center items-center mt-12 font-light text-xl text-[#10180BCC]">
             <p>
-              Want to discuss custom options? Use the form below and we'll reply
+              Want to discuss custom options? Use the form below and we&apos;ll reply
               within 1 business day.
             </p>
           </div>
@@ -71,7 +70,10 @@ function ContactUs() {
               </form>
             </div>
             <div>
-              <img src="blog/bgcontact.svg" />
+              <Image
+               src="blog/bgcontact.svg"
+               alt="blog"
+                />
             </div>
           </div>
         </div>
@@ -82,14 +84,20 @@ function ContactUs() {
             </span>
             <a href="https://goo.gl/maps/YxSU1x7NxNmzVrDr6">
               <div className="flex items-center gap-2 mr-[60px]">
-                <img src="contact-us/one.svg" className="w-[50px] h-[50px]" />
+                <Image src="contact-us/one.svg"
+                 className="w-[50px] h-[50px]" 
+                 alt="contact-us" />
                 <div>
                   <span className="font-normal text-2xl">Infynno</span>
                 </div>
               </div>
             </a>
             <div className="flex items-center gap-2">
-              <img src="contact-us/two.svg" className="w-[50px] h-[50px]" />
+              <Image
+               src="contact-us/two.svg" 
+               className="w-[50px] h-[50px]"
+               alt="contact-us"
+               />
               <div>
                 <span className="font-normal text-2xl mr-[60px]">
                   +91-848-883-8308
@@ -97,7 +105,11 @@ function ContactUs() {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <img src="contact-us/three.svg" className="w-[50px] h-[50px]" />
+              <Image 
+              src="contact-us/three.svg" 
+              className="w-[50px] h-[50px]" 
+              alt="contact-us"
+              />
               <div>
                 <span className="font-normal text-2xl">
                   <a href="https://infynno.com">Infynno.com</a>

@@ -73,8 +73,15 @@ function BreadCrumbs() {
       </nav>
     </>
 
-    // Home page all compoents / resources / blogs / template page to redirect there pages by clicking home page stuff   //
+    // Home page all compoents / resources / blogs / template page to redirect there pages by clicking home page stuff 
+    
   );
 }
 
 export default BreadCrumbs;
+
+/*
+
+
+
+*/

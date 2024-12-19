@@ -1,21 +1,20 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/no-unescaped-entities */
+
 "use client";
 
 import React from "react";
 import Carousel from "../components/Carousel";
 import CarouselTwo from "../components/CarouselTwo";
 import CarouselThree from "../components/CarouselThree";
-import Link from "next/link";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import Link from "next/link";
+import Image from "next/image";
 
 function Home() {
   return (
     <>
       <ScrollToTop />
       <div className="">
-        <img
+        <Image
           src="hideimage.png"
           alt="hidelogo  "
           className=" absolute right-0 top-48 h-[500px] w-[909px]"
@@ -55,20 +54,21 @@ function Home() {
 
           <div className=" flex flex-wrap gap-5  mt-8">
             <div className="relative flex items-center gap-1.5">
-              <img src="/html.svg" alt="html" className="block w-full h-auto" />
+              <Image src="/html.svg" alt="html" className="block w-full h-auto" />
               <div className="absolute top-0 bottom-0 left-0 right-0 opacity-0 transition-opacity duration-300 hover:opacity-100">
                 <a href="https://en.wikipedia.org/wiki/HTML">
-                  <img
+                  <Image
                     src="/htmlhover.svg"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"
                     title="HTML-Hayper Text Markup Language"
+                    alt="HTML"
                   />
                 </a>
               </div>
             </div>
 
             <div className="relative flex items-center gap-1.5">
-              <img
+              <Image
                 src="/react.svg"
                 alt="react"
                 className="block w-full h-auto"
@@ -76,30 +76,32 @@ function Home() {
               <div className="absolute top-0 bottom-0 left-0 right-0 opacity-0 transition-opacity duration-300 hover:opacity-100">
                 <a href="https://react.dev">
                   {" "}
-                  <img
+                  <Image
                     src="/reacthover.svg"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"
                     title="React - A Javascript Library building user interface"
+                    alt="REACT"
                   />
                 </a>
               </div>
             </div>
 
             <div className="relative flex items-center gap-1.5">
-              <img src="/vue.svg" alt="Vue" className="block w-full h-auto" />
+              <Image src="/vue.svg" alt="Vue" className="block w-full h-auto" />
               <div className="absolute top-0 bottom-0 left-0 right-0 opacity-0 transition-opacity duration-300 hover:opacity-100">
                 <a href="https://vuejs.org">
-                  <img
+                  <Image
                     src="/vuehover.svg"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"
                     title="VueJs - Progresive favascript framework"
+                    alt="Vue js"
                   />
                 </a>
               </div>
             </div>
 
             <div className="relative flex items-center gap-1.5">
-              <img
+              <Image
                 src="/laravel.svg"
                 alt="laravel"
                 className="block w-full h-auto"
@@ -107,17 +109,18 @@ function Home() {
               <div className="absolute top-0 bottom-0 left-0 right-0 opacity-0 transition-opacity duration-300 hover:opacity-100">
                 <a href="https://laravel.com">
                   {" "}
-                  <img
+                  <Image
                     src="/laravelhover.svg"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"
                     title="Laravel - PHP framework for web artisans"
+                    alt="Laravel"
                   />
                 </a>
               </div>
             </div>
 
             <div className="relative flex items-center gap-1.5">
-              <img
+              <Image
                 src="/tailwind.svg"
                 alt="Tailwind"
                 className="block w-full h-auto"
@@ -125,10 +128,11 @@ function Home() {
               <div className="absolute top-0 bottom-0 left-0 right-0 opacity-0 transition-opacity duration-300 hover:opacity-100">
                 <a href="https://tailwindcss.com">
                   {" "}
-                  <img
+                  <Image
                     src="/tailwindhover.svg"
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl"
                     title="Tailwind - Utility first css framework"
+                    alt="Tailwind"
                   />
                 </a>
               </div>
@@ -149,7 +153,7 @@ function Home() {
           </div>
 
           <div className=" mt-32 flex justify-center ">
-            <img
+            <Image
               src="big image.png "
               alt="bigiamge"
               className=" bg-gray-400 w-[900px] h-[500px] shadow-black rounded-lg "
@@ -224,7 +228,7 @@ function Home() {
 
         <div className="mt-[200px] ml-[90px] ">
           <div className="  w-[1500px] h-[200px]">
-            <img src="Group all.png" className="h-[220px] w-[1350px] " />
+            <Image src="Group all.png" className="h-[220px] w-[1350px] " alt=" All Group " />
           </div>
         </div>
 
@@ -244,7 +248,6 @@ function Home() {
           <div className="flex justify-end mr-[150px]">
             <Link
               href="templates"
-              // alt="Explore more Tailwind Templates"
               title="Explore more Tailwind Templates"
               className="font-semibold"
             >
@@ -306,10 +309,10 @@ function Home() {
               How TailwindTap Will Help You
             </h1>
             <p className="text-lg leading-9">
-              Stop coding, start creating! TailwindTap empowers you to build
-              amazing websites, regardless of your <br /> experience. Explore
-              our pre-made components and templates, customize freely with
-              open-source <br /> code, and bring your website vision to life.
+              Stop coding, start creating! TailwindTap empowers you to build
+              amazing websites, regardless of your <br /> experience. Explore
+              our pre-made components and templates&qot; customize freely with
+              open-source <br /> code, and bring your website vision to life.
             </p>
           </div>
           <div className=" ml-[120px] mb-20 ">
@@ -317,13 +320,13 @@ function Home() {
               FAQ - Frequently Asked Question
             </h1>
             <p className="text-lg leading-9">
-              FAQs to the rescue! Find quick answers to common questions and
-              clear up any doubts. Still <br /> curious? Don't hesitate to reach
-              out! We're happy to chat.
+              FAQs to the rescue! Find quick answers to common questions and
+              clear up any doubts. Still <br /> curious? Don&apos;t hesitate to reach
+              out! We&apos;re happy to chat.
             </p>
           </div>
           <div className="w-[1300px] h-[1080px] mr-[120px] ml-[120px] ">
-            <img src="/cards/Group 49.png" alt="FAQ" />
+            <Image src="/cards/Group 49.png" alt="FAQ" />
           </div>
         </div>
 

@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 import BreadCrumbs from "../components/BreadCrumbs";
 
@@ -148,57 +147,66 @@ function ComponentsPage() {
 
           <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 p-3 md:p-8 4xl:grid-cols-6 3xl:grid-cols-5">
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/comcard/Group 110.svg"
                 className="w-[250px] h-[200px]"
+                alt="Group 110"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/comcard/Group 111.svg"
                 className="w-[250px] h-[200px]"
+                alt="group 111"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/comcard/Group 112.svg"
                 className="w-[250px] h-[200px]"
+                alt="Group 112"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/comcard/Group 107.svg"
                 className="w-[250px] h-[200px]"
+                alt="Group 107"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/comcard/Group 108.svg"
                 className="w-[250px] h-[200px]"
+                alt="Group 108"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/comcard/Group 109.svg"
                 className="w-[250px] h-[200px]"
+                alt="Group 109"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/comcard/Group 104.svg"
                 className="w-[250px] h-[200px]"
+                alt="Group 104"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/comcard/Group 105.svg"
                 className="w-[250px] h-[200px]"
+                alt="Group 105"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image 
                 src="/comcard/Group 106.svg"
                 className="w-[250px] h-[200px]"
+                alt="Group 106"
               />
             </div>
           </div>
@@ -229,8 +237,16 @@ function ComponentsPage() {
         </div>
         <div className="w-[650px] h-[193px] flex justify-between items-center ">
           <div className="ml-[130px] flex flex-row gap-10 pr-10">
-            <img src="/comcard/Group 218.svg " className="w-[220px]" />
-            <img src="/comcard/Group 217.svg " className="w-[220px]" />
+            <Image 
+            src="/comcard/Group 218.svg " 
+            className="w-[220px]" 
+            alt="Group 218"
+            />
+            <Image 
+             src="/comcard/Group 217.svg "
+             className="w-[220px]"
+             alt="Group 217"
+             />
           </div>
         </div>
       </div>

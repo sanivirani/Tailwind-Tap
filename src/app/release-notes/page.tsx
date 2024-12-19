@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 
 function ReleaseNotes() {
@@ -25,7 +24,7 @@ function ReleaseNotes() {
             January - 24
           </span>
           <button className="flex items-center">
-            <img src="/release/cross.svg" />
+            <Image src="/release/cross.svg" alt="cross" />
           </button>
         </div>
         <div className="flex flex-row gap-[58px] mb-[40px]">
@@ -42,7 +41,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="ml-[40px]">
-                  <img src="/release/Group 117.png" className="w-[250px]" />
+                  <Image src="/release/Group 117.png" className="w-[250px]" alt="117"/>
                 </div>
               </div>
 
@@ -53,7 +52,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="ml-[40px]">
-                  <img src="/release/Group 118.png" className="w-[250px]" />
+                  <Image src="/release/Group 118.png" className="w-[250px]" alt="118"/>
                 </div>
               </div>
             </div>
@@ -64,7 +63,7 @@ function ReleaseNotes() {
             October - 23
           </span>
           <button className="flex items-center">
-            <img src="/release/cross.svg" />
+            <Image src="/release/cross.svg" alt="cross"/>
           </button>
         </div>
         <div className="flex flex-row gap-[58px] mb-[40px]">
@@ -81,7 +80,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="ml-[40px]">
-                  <img src="/release/Group 119.png" className="w-[250px]" />
+                  <Image src="/release/Group 119.png" className="w-[250px]" alt="119"/>
                 </div>
               </div>
               <div className="flex flex-col ml-[80px]">
@@ -91,7 +90,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="ml-[40px]">
-                  <img src="/release/Group 120.png" className="w-[250px]" />
+                  <Image src="/release/Group 120.png" className="w-[250px]" alt="120"/>
                 </div>
               </div>
             </div>
@@ -102,7 +101,7 @@ function ReleaseNotes() {
             September - 23
           </span>
           <button className="flex items-center">
-            <img src="/release/cross.svg" />
+            <Image src="/release/cross.svg" alt="cross"/>
           </button>
         </div>
         <div className="flex flex-row gap-[58px] mb-[60px]">
@@ -119,7 +118,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="">
-                  <img src="/release/01.png" className="w-[250px]" />
+                  <Image src="/release/01.png" className="w-[250px]" alt="01"/>
                 </div>
               </div>
               <div className="flex flex-col">
@@ -129,7 +128,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="">
-                  <img src="/release/02.png" className="w-[250px]" />
+                  <Image src="/release/02.png" className="w-[250px]" alt="02"/>
                 </div>
               </div>
               <div className="flex flex-col ">
@@ -139,7 +138,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="">
-                  <img src="/release/03.png" className="w-[250px]" />
+                  <Image src="/release/03.png" className="w-[250px]" alt="03"/>
                 </div>
               </div>
               <div className="flex flex-col ">
@@ -149,7 +148,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="">
-                  <img src="/release/04.png" className="w-[250px]" />
+                  <Image src="/release/04.png" className="w-[250px]" alt="04"/>
                 </div>
               </div>
               <div className="flex flex-col ">
@@ -159,7 +158,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="">
-                  <img src="/release/05.png" className="w-[250px]" />
+                  <Image src="/release/05.png" className="w-[250px]" alt="05"/>
                 </div>
               </div>
               <div className="flex flex-col">
@@ -169,7 +168,7 @@ function ReleaseNotes() {
                   </li>
                 </ul>
                 <div className="">
-                  <img src="/release/06.png" className="w-[250px]" />
+                  <Image src="/release/06.png" className="w-[250px]" alt="06"/>
                 </div>
               </div>
             </div>

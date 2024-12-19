@@ -1,6 +1,8 @@
 "use client";
+
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -8,7 +10,7 @@ function Footer() {
       <div className="mx-[120px] max-w-screen-2x ">
         <div className="mb-[50px] w-[250px]  ">
           <a href="http://localhost:3000/" className="flex items-center">
-            <img
+            <Image
               src="logo.png"
               className="mr-5 h-10 w-10 rounded-md"
               alt="Tailwind Tap"
@@ -23,8 +25,8 @@ function Footer() {
           <div className="w-[690px] h-[150px]">
             <p className=" font-light text-lg text-[#101010]">
               Thousands of developers have embraced the power of open-source
-              with TailwindTap's free pre-made components and templates. This
-              aligns perfectly with our team's ongoing commitment to creating
+              with TailwindTap&apos;s free pre-made components and templates. This
+              aligns perfectly with our team&apos;s  ongoing commitment to creating
               and sharing valuable resources, fostering a thriving community of
               empowered developers.
             </p>
@@ -81,21 +83,21 @@ function Footer() {
         <div className=" sm:flex sm:items-center sm:justify-between mb-[120px]">
           <div className="w-[168px] h-[30px] flex gap-4 justify-start ">
             <a>
-              <img src="instagram.svg" />
+              <Image src="instagram.svg" alt="Instagram"/>
             </a>
             <a>
               <span>
-                <img src="Twitter.svg" />
+                <Image src="Twitter.svg" alt="Twitter"/>
               </span>
             </a>
             <a>
               <span>
-                <img src="Linkedin.svg" />
+                <Image src="Linkedin.svg" alt="LinkedIn"/>
               </span>
             </a>
             <a>
               <span>
-                <img src="Facebook.svg" />
+                <Image src="Facebook.svg" alt="Facebook"/>
               </span>
             </a>
           </div>

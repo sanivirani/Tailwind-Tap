@@ -1,6 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
@@ -50,7 +48,7 @@ function HireADeveloper() {
               </div>
             </div>
             <div className="w-[450px] h-[150px] mt-[150px] mr-[197px] ml-[150px]">
-              <img src="/hire/sideimg.png" className="" />
+              <Image src="/hire/sideimg.png" className="" alt="side image" />
             </div>
           </div>
         </div>
@@ -70,15 +68,15 @@ function HireADeveloper() {
           </div>
         </div>
         <div className="h-[470px] flex gap-5">
-          <img src="/hire/Group 231.svg" className="w-[300px] h-[400px]" />
-          <img src="/hire/Group 232.svg" className="w-[300px] h-[400px]" />
-          <img src="/hire/Group 233.svg" className="w-[300px] h-[400px]" />
-          <img src="/hire/Group 234.svg" className="w-[300px] h-[400px]" />
+          <Image src="/hire/Group 231.svg" className="w-[300px] h-[400px]" alt="231"/>
+          <Image src="/hire/Group 232.svg" className="w-[300px] h-[400px]" alt="232"/>
+          <Image src="/hire/Group 233.svg" className="w-[300px] h-[400px]" alt="233"/>
+          <Image src="/hire/Group 234.svg" className="w-[300px] h-[400px]" alt="234"/>
         </div>
       </div>
       <div className="mt-[120px] w-full h-[576px] flex justify-center">
         <div className="mr-[90px] ">
-          <img src="/hire/fimg.png" className="w-[500px] h-[450px]" />
+          <Image src="/hire/fimg.png" className="w-[500px] h-[450px]" alt="fimag"/>
         </div>
         <div className="flex flex-col mt-[90px] gap-10">
           <h3 className="font-medium text-4xl">
@@ -103,17 +101,17 @@ function HireADeveloper() {
       <div className="w-auto h-[625px] ml-[120px] mr-[120px]">
         <div className="flex flex-col justify-center h-[372px] bg-[#E3F2D5] rounded-[30px] z-0">
           <div className=" flex justify-center mt-[250px]">
-            <h1 className="font-medium text-4xl">What's Next ?</h1>
+            <h1 className="font-medium text-4xl">What&aps;s Next ?</h1>
           </div>
           <div className=" flex flex-row justify-center gap-[60px] z-10 ml-12 mx-[60px] mt-[60px] ">
             <button>
-              <img src="hire/Group 223.png" className="w-[350px] h-[400px]" />
+              <Image src="hire/Group 223.png" className="w-[350px] h-[400px]" alt="223"/>
             </button>
             <button>
-              <img src="hire/Group 222.png" className="w-[350px] h-[400px]" />
+              <Image src="hire/Group 222.png" className="w-[350px] h-[400px]" alt="222"/>
             </button>
             <button>
-              <img src="hire/Group 224.png" className="w-[350px] h-[400px]" />
+              <Image src="hire/Group 224.png" className="w-[350px] h-[400px]" alt="224"/>
             </button>
           </div>
         </div>

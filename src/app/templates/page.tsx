@@ -1,7 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
+
 import React from "react";
+import Image from "next/image";
 
 function TemplatePage() {
   return (
@@ -18,7 +17,7 @@ function TemplatePage() {
             Specifically designed for modern web projects! Our collection of
             Tailwind CSS elements includes components specifically crafted for
             SaaS, SPAs, dashboards, NFTs, and startup landing pages, ensuring a
-            perfect fit for your project's needs.
+            perfect fit for your project&apos;s needs.
           </h4>
         </div>
       </div>
@@ -108,57 +107,66 @@ function TemplatePage() {
 
           <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 p-3 md:p-8 4xl:grid-cols-6 3xl:grid-cols-5">
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 110.svg"
                 className="w-[250px] h-[200px]"
+                alt="110"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 111.svg"
                 className="w-[250px] h-[200px]"
+                alt="111"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 112.svg"
                 className="w-[250px] h-[200px]"
+                alt="112"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 107.svg"
                 className="w-[250px] h-[200px]"
+                alt="107"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 108.svg"
                 className="w-[250px] h-[200px]"
+                alt="108"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 109.svg"
                 className="w-[250px] h-[200px]"
+                alt="109"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 104.svg"
                 className="w-[250px] h-[200px]"
+                alt="104"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 105.svg"
                 className="w-[250px] h-[200px]"
+                alt="105"
               />
             </div>
             <div className="relative rounded-lg group-hover:scale-105 group-hover:duration-75">
-              <img
+              <Image
                 src="/template/Group 106.svg"
                 className="w-[250px] h-[200px]"
+                alt="106"
               />
             </div>
           </div>
@@ -196,8 +204,8 @@ function TemplatePage() {
         </div>
         <div className="w-[650px] h-[193px] flex justify-between items-center ">
           <div className="ml-[130px] flex flex-row gap-10 pr-10">
-            <img src="/comcard/Group 105.svg " className="w-[220px]" />
-            <img src="/comcard/Group 110.svg " className="w-[220px]" />
+            <Image src="/comcard/Group 105.svg " className="w-[220px]" alt="105"/>
+            <Image src="/comcard/Group 110.svg " className="w-[220px]" alt="110"/>
           </div>
         </div>
       </div>

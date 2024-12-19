@@ -7,6 +7,7 @@ import React from "react";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 const data = [
   {
@@ -58,11 +59,11 @@ function CarouselTwo() {
     <div className="w-[1250px] h-[400px] mb-[200px]  ">
       <div className="">
         <Slider {...settings}>
-          {data.map((d) => (
-            <div className="rounded-xl h-[450px] p-7 ">
+          {data.map((d, index) => (
+            <div className="rounded-xl h-[450px] p-7 " key={index}>
               <div className=" flex justify-center">
                 <Link href="/templates" onClick={handleClick}>
-                  <img src={d.img} alt="" className="h-[380px] w-[650px] " />
+                  <Image src={d.img} alt="" className="h-[380px] w-[650px] " />
                 </Link>
               </div>
             </div>

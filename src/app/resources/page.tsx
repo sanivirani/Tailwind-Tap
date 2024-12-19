@@ -1,8 +1,7 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/no-unescaped-entities */
+
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 
 function page() {
   return (
@@ -88,14 +87,14 @@ function page() {
           </div>
 
           <div className="w-[700px] h-[300px] mt-[94px] mx-[150px] mb-20">
-            <img src="resource/image 1.png" className="h-[300px] w-[600px]" />
+            <Image src="resource/image 1.png" className="h-[300px] w-[600px]" alt="1"/>
           </div>
 
           <div className=" relative w-auto h-32  px-[70px] mb-10">
             <p className=" font-light text-xl ">
               Simplify your gradient game with Hypercolor! This powerful tool
               seamlessly integrates with Tailwind CSS, offering effortless
-              creation of unique gradients that enhance your design's depth and
+              creation of unique gradients that enhance your design&apos;s depth and
               vibrancy. Discover its wonders and elevate your projects in this
               insightful post!
             </p>
@@ -151,7 +150,7 @@ function page() {
                   Image Download:
                   <span className="font-light">
                     You can download image of gradient if you want to put in any
-                    specific location or place. it will also provide you flags'
+                    specific location or place. it will also provide you flags&apos;
                     css and images of all country as well
                   </span>
                 </li>
@@ -160,7 +159,7 @@ function page() {
           </div>
 
           <div className="w-[700px] h-[300px] mx-[150px] mb-10">
-            <img src="resource/image 3.png" className="h-[300px] w-[600px]" />
+            <Image src="resource/image 3.png" className="h-[300px] w-[600px]" alt="3"/>
           </div>
           <div className=" flex justify-center w-auto mt-10 mb-10">
             <button className=" hover:bg-[#4c7c2c] text-[#66A83A] hover:text-white text-xl px-6 py-3  rounded-2xl font-normal shadow transition duration-300  border-[2px] border-[#66A83A]">

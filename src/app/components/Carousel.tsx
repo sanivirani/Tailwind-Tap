@@ -1,3 +1,86 @@
+'use client'
+
+import Link from "next/link";
+import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import React from "react";
+import { FaAngleLeft } from "react-icons/fa6";
+import { FaAngleRight } from "react-icons/fa6";
+
+const data = [
+  {
+    img: `/cards/Group 85.png`,
+  },
+  {
+    img: `/cards/Group 86.png`,
+  },
+  {
+    img: `/cards/Group 87.png`,
+  },
+];
+
+const CustomRightArrow = ({ className, style, onClick }: any) => {
+  return (
+    <FaAngleRight
+      className={`!text-[#66A83A] h-6 w-6 !right -mt-7   ${className}`}
+      {...style}
+      onClick={onClick}
+    />
+  );
+};
+
+const CustomLeftArrow = ({ className, style, onClick }: any) => {
+  return (
+    <FaAngleLeft
+      className={`!text-[#66A83A] opacity-40 h-6 w-6 !left mr-9 -mt-7   ${className}`}
+      {...style}
+      onClick={onClick}
+    />
+  );
+};
+
+function Carousel() {
+  const settings = {
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <CustomRightArrow />,
+    prevArrow: <CustomLeftArrow />,
+  };
+
+  const handleClick = () => {};
+
+  return (
+    <div className="w-[1300px] h-[284px] mt-10">
+      <div>
+        <Slider {...settings}>
+          {data.map((d, index) => (
+            <div className="rounded-xl h-[350px]" key={index}>
+              <div className="flex justify-center">
+                <Link href="/componentspage" onClick={handleClick}>
+                  <Image src={d.img} alt="" className="h-[284px] w-[400px]" />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
+  );
+}
+
+export default Carousel;
+
+
+
+
 // "use client";
 
 // import "slick-carousel/slick/slick.css";
@@ -76,84 +159,84 @@
 //     </>
 //   );
 // }
-"use client";
+// "use client";
 
-import Link from "next/link";
+// import Link from "next/link";
+// import Image from "next/image";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import React from "react";
+// import { FaAngleLeft } from "react-icons/fa6";
+// import { FaAngleRight } from "react-icons/fa6";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import React from "react";
-import { FaAngleLeft } from "react-icons/fa6";
-import { FaAngleRight } from "react-icons/fa6";
+// const data = [
+//   {
+//     img: `/cards/Group 85.png`,
+//   },
 
-const data = [
-  {
-    img: `/cards/Group 85.png`,
-  },
+//   {
+//     img: `/cards/Group 86.png`,
+//   },
 
-  {
-    img: `/cards/Group 86.png`,
-  },
+//   {
+//     img: `/cards/Group 87.png`,
+//   },
+// ];
 
-  {
-    img: `/cards/Group 87.png`,
-  },
-];
+// const CustomRightArrow = ({ className, style, onClick }: any) => {
+//   return (
+//     <FaAngleRight
+//       className={`!text-[#66A83A] h-6 w-6 !right -mt-7   ${className}`}
+//       {...style}
+//       onClick={onClick}
+//     />
+//   );
+// };
 
-const CustomRightArrow = ({ className, style, onClick }: any) => {
-  return (
-    <FaAngleRight
-      className={`!text-[#66A83A] h-6 w-6 !right -mt-7   ${className}`}
-      {...style}
-      onClick={onClick}
-    />
-  );
-};
+// const CustomLeftArrow = ({ className, style, onClick }: any) => {
+//   return (
+//     <FaAngleLeft
+//       className={`!text-[#66A83A] opacity-40 h-6 w-6 !left mr-9 -mt-7   ${className}`}
+//       {...style}
+//       onClick={onClick}
+//     />
+//   );
+// };
 
-const CustomLeftArrow = ({ className, style, onClick }: any) => {
-  return (
-    <FaAngleLeft
-      className={`!text-[#66A83A] opacity-40 h-6 w-6 !left mr-9 -mt-7   ${className}`}
-      {...style}
-      onClick={onClick}
-    />
-  );
-};
+// function Carousel() {
+//   const settings = {
+//     arrows: true,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
 
-function Carousel() {
-  const settings = {
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     nextArrow: <CustomRightArrow />,
+//     prevArrow: <CustomLeftArrow />,
+//   };
 
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    nextArrow: <CustomRightArrow />,
-    prevArrow: <CustomLeftArrow />,
-  };
+//   const handleClick = () => {};
+//   return (
+//     <div className="w-[1300px] h-[284px] mt-10">
+//       <div className="">
+//         <Slider {...settings}>
+//           {data.map((d, index) => (
+//             <div className="rounded-xl h-[350px] ">
+//               <div className=" flex justify-center ">
+//                 <Link href="/componentspage" onClick={handleClick}>
+//                   <Image src={d.img} alt="" className="h-[284px] w-[400px] " />
+//                 </Link>
+//               </div>
+//             </div>
+//           ))}
+//         </Slider>
+//       </div>
+//     </div>
+//   );
+// }
 
-  const handleClick = () => {};
-  return (
-    <div className="w-[1300px] h-[284px] mt-10">
-      <div className="">
-        <Slider {...settings}>
-          {data.map((d) => (
-            <div className="rounded-xl h-[350px] ">
-              <div className=" flex justify-center ">
-                <Link href="/componentspage" onClick={handleClick}>
-                  <img src={d.img} alt="" className="h-[284px] w-[400px] " />
-                </Link>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
-  );
-}
-
-export default Carousel;
+// export default Carousel;

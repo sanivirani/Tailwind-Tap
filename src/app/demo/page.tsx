@@ -1,7 +1,7 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
+
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 function BreadCrumbs() {
   return (
@@ -25,21 +25,24 @@ function BreadCrumbs() {
           </div>
           <div className="grid grid-cols place-items-start px-14 gap-[28px] mb-20">
             <div className="">
-              <img
+              <Image
                 src="/BreadCrumbs/Vimg/Group 133.png"
                 className="w-[300px] h-[200px]"
+                alt="133"
               />
             </div>
             <div className="">
-              <img
+              <Image
                 src="/BreadCrumbs/Vimg/Group 134.png"
                 className="w-[300px] h-[200px]"
+                alt="134"
               />
             </div>
             <div className="">
-              <img
+              <Image
                 src="/BreadCrumbs/Vimg/Group 135.png"
                 className="w-[300px] h-[200px]"
+                alt="135"
               />
             </div>
           </div>
@@ -56,7 +59,7 @@ function BreadCrumbs() {
                   ChatGPT Website{" "}
                   <span className="ml-3 text-base mt-1 mr-1">Share Link </span>
                   <span>
-                    <img src="preview/Share.png" />
+                    <Image src="preview/Share.png" alt="preview"/>
                   </span>{" "}
                 </a>
               </span>
@@ -81,17 +84,17 @@ function BreadCrumbs() {
               <div className=" flex gap-5 pt-4 pl-10 font-semibold text-xs text-[#FFFFFF]">
                 <div className="flex justify-evenly flex-row gap-5 items-baseline">
                   <div className="flex flex-col gap-2 items-center">
-                    <img src="preview/iPhone 14.png" className="w-7" />
+                    <Image src="preview/iPhone 14.png" className="w-7" alt="iphone"/>
                     <span>Mobile</span>
                   </div>
 
                   <div className="flex flex-col gap-2 items-baseline">
-                    <img src="preview/iPad Mini.png" className="w-9" />
+                    <Image src="preview/iPad Mini.png" className="w-9" alt="mini"/>
                     <span>Tablet</span>
                   </div>
 
                   <div className="flex flex-col gap-2  items-center">
-                    <img src="preview/Laptop.png" className="w-9" />
+                    <Image src="preview/Laptop.png" className="w-9" alt="laptop"/>
                     <span>Laptop</span>
                   </div>
                 </div>
@@ -100,10 +103,10 @@ function BreadCrumbs() {
               <div className="flex justify-start w-[450px] h-auto mt-5 mr-10">
                 <div className="flex flex-row items-center gap-5">
                   <div className="flex gap-1 flex-row rounded-3xl items-center ml-20 w-[180px] h-8 bg-white p-2">
-                    <img src="/preview/File Preview.png" />
+                    <Image src="/preview/File Preview.png" alt="file preview"/>
                     <span>Preview</span>
                     <div className="bg-[#2F2E41] flex flex-row ml-2 pr-7 gap-1 text-white rounded-r-3xl">
-                      <img src="/preview/Code.svg" className="" />
+                      <Image src="/preview/Code.svg" className="" alt="preview"/>
                       <span>Code</span>
                     </div>
                   </div>
@@ -112,22 +115,23 @@ function BreadCrumbs() {
                     <div className="w-[100px] h-8 bg-[#2F2E41] text-white rounded-3xl py-4 px-7 my-1 mx-1 pl-2 flex items-center justify-start ">
                       <span className="">React</span>
                       <span className="pl-2 ">
-                        <img src="/preview/Dropdown.svg" />
+                        <Image src="/preview/Dropdown.svg" alt="dropdown"/>
                       </span>
                     </div>
                   </div>
 
                   <div>
-                    <img src="/preview/Download.png" className=" text-white" />
+                    <Image src="/preview/Download.png" className=" text-white" alt="download"/>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className=" w-[800px] h-[450px] mx-[50px]  rounded-b-lg ">
-              <img
+              <Image
                 src="/BreadCrumbs/Vimg/card-hover 1.png"
                 className="flex justify-center"
+                alt="card-hover"
               />
             </div>
             <div className="mx-[100px] items-center h-[180px] flex justify-center">
@@ -161,9 +165,9 @@ function BreadCrumbs() {
         </div>
 
         <div className="flex flex-row gap-5 h-auto mt-5 w-[250px] mx-[60px]">
-          <img src="/preview/Group 143.png" />
-          <img src="/preview/Group 144.png" />
-          <img src="/preview/Group 145.png" />
+          <Image src="/preview/Group 143.png" alt="143"/>
+          <Image src="/preview/Group 144.png" alt="144"/>
+          <Image src="/preview/Group 145.png" alt="145"/>
         </div>
       </div>
 
@@ -176,9 +180,9 @@ function BreadCrumbs() {
         </div>
 
         <div className="flex flex-row gap-5 h-auto mt-5 w-[250px] mx-[60px]">
-          <img src="/preview/Group 146.png" />
-          <img src="/preview/Group 147.png" />
-          <img src="/preview/Group 148.png" />
+          <Image src="/preview/Group 146.png" alt="146"/>
+          <Image src="/preview/Group 147.png" alt="147"/>
+          <Image src="/preview/Group 148.png" alt="148"/>
         </div>
       </div>
 

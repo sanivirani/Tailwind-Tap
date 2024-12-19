@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   return (
@@ -8,7 +9,7 @@ function Header() {
       <nav className="flex justify-between items-center w-[1408px] h-[90px] top-[50px] left-[60px] right-[60px] border rounded-2xl fixed bg-white drop-shadow-md backdrop-blur-md overflow-y-hidden shadow-slate-300 z-50 ">
         <div className=" flex items-center w-[250px] gap-5 h-10 ml-[30px] ">
           <Link href="http://localhost:3000/" className="flex items-center">
-            <img
+            <Image
               src="logo.png"
               className="mr-5 h-10 w-10 rounded-md"
               alt="Tailwind Tap"

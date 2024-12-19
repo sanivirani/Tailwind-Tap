@@ -7,6 +7,7 @@ import React from "react";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 const data = [
   {
@@ -18,8 +19,9 @@ const data = [
   },
 
   {
-    img: `/cards/Group 19.png`,
-  },
+    img: `/cards/Group 19.png`, 
+
+  }
 ];
 
 const CustomRightArrow = ({ className, style, onClick }: any) => {
@@ -62,17 +64,18 @@ function CarouselThree() {
     <div className="w-[1300px] h-[284px] ml-[100px]">
       <div className="">
         <Slider {...settings}>
-          {data.map((d) => (
-            <div className="rounded-xl h-[350px] ">
+          {data.map((d, index) => (
+            <div className="rounded-xl h-[350px]" key={index}> 
               <div className=" flex justify-center ">
                 <Link href="/resources" onClick={handleClick}>
-                  <img src={d.img} alt="" className="h-[284px] w-[400px] " />
+                  <Image src={d.img} alt="" className="h-[284px] w-[400px] " />
                 </Link>
               </div>
             </div>
           ))}
         </Slider>
       </div>
+      <div className=""> </div>
     </div>
   );
 }
